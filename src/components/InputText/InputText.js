@@ -1,10 +1,19 @@
 import './InputText.css'
 
 const InputText = (props) => {
+
+    const toType = (event) => {
+        props.toChange(event.target.value)
+    }
+
     return (
         <div className="input-text">
             <label>{props.label}</label>
-            <input required={props.mandatory} placeholder={props.placeholder} />
+            <input
+                onChange={toType}
+                value={props.value}
+                required={props.mandatory}
+                placeholder={props.placeholder} />
         </div>
     )
 }
