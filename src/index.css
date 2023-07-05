@@ -1,3 +1,20 @@
+:root{
+  --programacao-primary: #57C278;
+  --programacao-secondary: #d9f7e9;
+  --frontend-primary: #82CFFA;
+  --frontend-secondary: #E8F8FF;
+  --data-science-primary: #A6D157;
+  --data-science-secondary: #F0F8E2;
+  --devops-primary: #E06B69;
+  --devops-secondary: #FDE7E8;
+  --ux-design-primary: #DB6EBF;
+  --ux-design-secondary: #FAE9F5;
+  --mobile-primary: #FFBA05;
+  --mobile-secondary: #FFF5D9;
+  --inovacao-gestao-primary: #FF8A29;
+  --inovacao-gestao-secondary: #FFEEDF;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
