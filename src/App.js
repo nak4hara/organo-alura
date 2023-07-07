@@ -59,7 +59,9 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Forms toEachRegisteredContributor={contributor => toEachNewContributorAdded(contributor)} />
+      <Forms
+        teams={teams.map(team => team.name)}
+        toEachRegisteredContributor={contributor => toEachNewContributorAdded(contributor)} />
 
       {teams.map(team =>
         <Team

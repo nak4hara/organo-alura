@@ -7,7 +7,7 @@ const InputText = (props) => {
     }
 
     return (
-        <div className="input-text">
+        <div className="input-text" >
             <label>{props.label}</label>
             <input
                 onChange={toType}

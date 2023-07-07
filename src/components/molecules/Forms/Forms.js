@@ -5,15 +5,6 @@ import './Forms.css'
 import Button from '../../Button/Button'
 
 export default function Forms(props) {
-    const teams = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
     const [name, setName] = useState('')
     const [position, setPosition] = useState('')
     const [image, setImage] = useState('')
@@ -59,7 +50,7 @@ export default function Forms(props) {
                     toChange={value => setTeam(value)}
                     mandatory={true}
                     label="Time"
-                    itens={teams}
+                    itens={props.teams}
                 />
                 <Button>
                     Criar card
