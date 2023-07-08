@@ -5,8 +5,13 @@
 .team h3{
     font-weight: 400;
     font-size: 32px;
-    padding: 34px;
     padding-bottom: 8px;
     border-bottom: 4px solid;
     display: inline-block;
+}
+
+.team .contributors {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }

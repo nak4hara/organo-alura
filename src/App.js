@@ -52,7 +52,6 @@ function App() {
   const [contributors, setContributors] = useState([])
 
   const toEachNewContributorAdded = (contributor) => {
-    console.log(contributor)
     setContributors([...contributors, contributor])
   }
 
@@ -69,6 +68,7 @@ function App() {
           title={team.name}
           backgroundColor={team.secondaryColor}
           primaryColor={team.primaryColor}
+          contributors={contributors.filter(contributor => contributor.team === team.name)}
         />
       )}
     </div>
