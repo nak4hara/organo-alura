@@ -1,5 +1,5 @@
 .footer__page{
-    height: 213px;
+    height: 200px;
     background-image: url(/public/images/fundo.png);
     background-position: center;
     background-color: #6278f7;
@@ -22,4 +22,22 @@
 .footer__page p {
     color: #fff;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer__page .social-media img {
+        height: 20px;
+    }
+    .footer__page .social-media {
+        gap: 20px;
+    }
+    .footer__page p {
+        font-size: 14px;
+    }
+    .footer__page{
+        height: 120px;
+    }
+    .footer__page img{
+        height: 40%;
+    }
 }

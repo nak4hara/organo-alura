@@ -4,7 +4,7 @@ const DropdownList = (props) => {
     return (
         <div className='dropdown-list'>
             <label>{props.label}</label>
-            <select
+            <select className='select'
                 required={props.mandatory}
                 value={props.value}
                 onChange={event => props.toChange(event.target.value)}>
