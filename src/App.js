@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from './components/Banner/Banner'
 import Forms from './components/molecules/Forms/Forms'
 import Team from './components/molecules/Team/Team';
+import Footer from './components/organisms/Footer/Footer';
 
 function App() {
 
@@ -71,6 +72,7 @@ function App() {
           contributors={contributors.filter(contributor => contributor.team === team.name)}
         />
       )}
+      <Footer />
     </div>
   );
 }

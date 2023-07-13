@@ -19,6 +19,10 @@ export default function Forms(props) {
             image,
             team
         })
+        setName('')
+        setPosition('')
+        setImage('')
+        setTeam('')
     }
 
     return (

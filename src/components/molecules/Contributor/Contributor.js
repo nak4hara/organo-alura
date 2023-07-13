@@ -1,9 +1,9 @@
 import './Contributor.css'
 
-const Contributor = ({name, position, image}) => {
+const Contributor = ({name, position, image, backgroundColor}) => {
     return (
         <div className='contributor'>
-            <div className='header'>
+            <div className='header' style={{backgroundColor: backgroundColor}}>
                 <img src={image} alt={name} /> 
             </div>
             <div className='footer'>

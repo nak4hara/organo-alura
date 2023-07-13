@@ -8,6 +8,7 @@ const DropdownList = (props) => {
                 required={props.mandatory}
                 value={props.value}
                 onChange={event => props.toChange(event.target.value)}>
+                <option value='' disabled></option>
                 {props.itens.map(item => <option key={item}>{item}</option>)}
             </select>
         </div>
